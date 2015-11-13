@@ -62,32 +62,24 @@
     </div>
 </section>
 
-<SCRIPT LANGUAGE="JavaScript">
+<center>
+  
+  <SCRIPT LANGUAGE="JavaScript">
 <!-- (c) AccessProtect.com
-function r_check() {if (document.regform.name.value.length < 1) {
-alert("Name?");document.regform.name.focus();return false;}if (document.regform.username.value.length < 3) {
-alert("Username?");document.regform.username.focus();return false;}if (document.regform.password.value.length < 3) {
-alert("Password?");document.regform.password.focus();return false;}
+function l_check() {
+if (document.loginform.username.value.length < 3) {
+alert("Username?");document.loginform.username.focus();return false;}
+if (document.loginform.password.value.length < 3) {
+alert("Password?");document.loginform.password.focus();return false;}
 }
 // -->
 </script>
-<FORM action="http://keeg022200.AccessProtect.com/reg/" method="post" name="regform" onsubmit="return r_check(this)">
+
+<FORM action="http://keeg022200.AccessProtect.com/login/" method="post" name="loginform" onsubmit="return l_check(this)">
  <INPUT name="LANG" value="US" type="hidden">
- <INPUT name="URL_success" value="http://keeganbourque.tk" type="hidden">
- <INPUT name="URL_unavailable" value="http://keeganbourque.tk" type="hidden">
- <INPUT name="URL_userexist" value="http://keeganbourque.tk" type="hidden">
+ <INPUT name="URL_nouser" value="http://keeganbourque.tk/register" type="hidden">
+ <INPUT name="URL_wrongpass" value="http://keeganbourque.tk/signin" type="hidden">
  <TABLE>
-
-  <TR>
-   <TD nowrap bgcolor="#F5F5F5"><B>   </B><FONT face="Arial,Helvetica" size="2">Name:</FONT><B>   </B></TD>
-   <TD nowrap><INPUT type="text" name="name" value maxlength="26" size="26"></TD>
-  </TR>
-
-  <TR>
-   <TD nowrap bgcolor="#F5F5F5"><B>   </B><FONT face="Arial,Helvetica" size="2">Email:</FONT><B>   </B></TD>
-   <TD nowrap><INPUT type="text" name="email" value maxlength="70" size="26"></TD>
-  </TR>
-
   <TR>
    <TD nowrap bgcolor="#F5F5F5"><B>   <FONT face="Arial,Helvetica" size="2">Username:</FONT>   </B></TD>
    <TD nowrap><INPUT type="text" name="username" value maxlength="26" size="26"></TD>
@@ -98,11 +90,13 @@ alert("Password?");document.regform.password.focus();return false;}
   </TR>
   <TR>
    <TD> </TD>
-   <TD><INPUT type="submit" value="Register" name="B1"></TD>
+   <TD><INPUT type="submit" value="Login" name="B1"></TD>
   </TR>
  </TABLE>
 </FORM>
 
+  
+</center>
 <footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-1" style="background-color: rgb(68, 68, 68);">
     
     <div class="mbr-section__container container">
